@@ -1,13 +1,4 @@
- /* body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  transform-origin: top left;
-}
-.container {
-  display: flex;
-  margin-top: 50px;
-  height: calc(100vh - 100px);
-} */
+
 .App {
   font-family: Arial, sans-serif;
 }

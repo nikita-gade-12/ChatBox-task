@@ -1,0 +1,167 @@
+/* /* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transform-origin: top left;
+}
+.container {
+  display: flex;
+  margin-top: 50px;
+  height: calc(100vh - 100px);
+} */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  /* padding-top: 4rem; */
+}
+
+.chat-window {
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin: 5px 0;
+}
+
+.chat-message.outgoing {
+  text-align: right;
+}
+
+.message-sender {
+  font-weight: bold;
+}
+
+.message-content {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.message-timestamp {
+  font-size: 0.8em;
+  color: gray;
+}
+*/ .App {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* Default: side-by-side layout */
+  padding-top: 3rem;
+  gap: 20px;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Chat window styling */
+.chat-window {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.chat-message {
+  margin: 5px 0;
+}
+
+.chat-message.outgoing {
+  text-align: right;
+}
+
+.message-sender {
+  font-weight: bold;
+}
+
+.message-content {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #e0f7fa;
+  border-radius: 5px;
+}
+
+.chat-message.outgoing .message-content {
+  background-color: #bbdefb;
+}
+
+.message-timestamp {
+  font-size: 0.8em;
+  color: gray;
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack content vertically on medium devices */
+    padding-top: 2rem;
+  }
+
+  .chat-window {
+    height: 250px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 10px; /* Reduce spacing between sections */
+  }
+
+  .main-content {
+    padding: 10px; /* Reduce padding for small devices */
+  }
+
+  .chat-window {
+    height: 200px; /* Adjust height further */
+  }
+
+  .message-content {
+    font-size: 0.9em; /* Reduce font size */
+    padding: 8px; /* Smaller padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column; /* Ensure vertical stacking on small screens */
+  }
+
+  .main-content {
+    padding: 5px; /* Minimize padding */
+  }
+
+  .chat-window {
+    height: 150px; /* Minimize chat window height */
+    font-size: 0.9em; /* Reduce text size */
+  }
+
+  .message-content {
+    font-size: 0.85em;
+    padding: 6px;
+  }
+
+  .message-timestamp {
+    font-size: 0.7em; /* Smaller timestamp text */
+  }
+}

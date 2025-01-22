@@ -1,0 +1,89 @@
+/* .footer {
+  background-color: #0c0c0c;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(243, 238, 238);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+.chat-footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 15px;
+  width: 98%; 
+  
+  background-color: #b44070;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.footer-info {
+  flex: 1; 
+  text-align: left;
+  font-size: 14px;
+  color: #f6f8fb;
+}
+
+.footer-info .footer-name {
+  font-weight: bold;
+  color: #e9ebec;
+}
+
+.footer-info p {
+  margin: 2px 0; 
+}
+
+.footer-chat {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  flex: 2; 
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+  color: #eceff1;
+  transition: color 0.2s;
+}
+
+.icon-button:hover {
+  color: #007bff;
+}
+
+.message-input {
+  flex: 1; 
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 25px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.message-input:focus {
+  border-color: #007bff;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
